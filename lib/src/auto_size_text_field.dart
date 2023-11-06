@@ -597,7 +597,7 @@ class _AutoSizeTextFieldState extends State<AutoSizeTextField> {
         readOnly: widget.readOnly,
         scrollController: widget.scrollController,
         scrollPadding: widget.scrollPadding,
-        scrollPhysics: widget.scrollPhysics,
+        scrollPhysics: NeverScrollableScrollPhysics(),
         selectionHeightStyle: widget.selectionHeightStyle,
         selectionWidthStyle: widget.selectionWidthStyle,
         showCursor: widget.showCursor,
