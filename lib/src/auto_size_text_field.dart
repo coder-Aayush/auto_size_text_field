@@ -721,16 +721,16 @@ class _AutoSizeTextFieldState extends State<AutoSizeTextField> {
 
     String word = text.toPlainText();
 
-    if (word.length > 0) {
-      // replace all \n with 'space with \n' to prevent dropping last character to new line
-      var textContents = text.text ?? '';
-      word = textContents.replaceAll('\n', ' \n');
-      // \n is 10, <space> is 32
-      if (textContents.codeUnitAt(textContents.length - 1) != 10 &&
-          textContents.codeUnitAt(textContents.length - 1) != 32) {
-        word += ' ';
-      }
-    }
+    // if (word.length > 0) {
+    //   // replace all \n with 'space with \n' to prevent dropping last character to new line
+    //   var textContents = text.text ?? '';
+    //   word = textContents.replaceAll('\n', ' \n');
+    //   // \n is 10, <space> is 32
+    //   if (textContents.codeUnitAt(textContents.length - 1) != 10 &&
+    //       textContents.codeUnitAt(textContents.length - 1) != 32) {
+    //     word += ' ';
+    //   }
+    // }
 
     // Adds prefix and suffix text
     word += widget.decoration.prefixText ?? '';
